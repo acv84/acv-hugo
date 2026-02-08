@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ .Content }}
+
+<h2>Proyectos recientes</h2>
+<ul>
+{{ range first 6 (where .Site.RegularPages "Section" "projects") }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ with .Params.year }}({{ . }}){{ end }}</li>
+{{ end }}
+</ul>
+{{ end }}
