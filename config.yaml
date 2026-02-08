@@ -1,3 +1,8 @@
 baseURL: "http://hugo-quickstart-template.netlify.com"
 languageCode: "en-us"
 title: "Netlify + Hugo Quickstart"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
