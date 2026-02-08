@@ -1,10 +1,15 @@
 {{ define "main" }}
-{{ .Content }}
-
-<h2>Proyectos recientes</h2>
-<ul>
-{{ range first 6 (where .Site.RegularPages "Section" "projects") }}
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ with .Params.year }}({{ . }}){{ end }}</li>
-{{ end }}
-</ul>
+<section class="hero">
+    <h1>Adrián Castro Viejo</h1>
+    <p class="subtitle">Visual Effects Artist & Filmmaker</p>
+    <p class="description">
+        Specializing in layout, matchmove, and CG for high-end film and TV productions.
+        <br>
+        Credits include <em>The Witcher</em>, <em>Foundation</em>, <em>Star Wars: The Last Jedi</em>, and more.
+    </p>
+    <div class="cta-buttons">
+        <a href="/projects/" class="btn btn-primary">View Filmography</a>
+        <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
+    </div>
+</section>
 {{ end }}
