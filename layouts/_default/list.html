@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+{{ if eq .Section "projects" }}
+  <ul>
+  {{ range .Pages }}
+    <li>
+      <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+      {{ with .Params.year }}({{ . }}){{ end }}
+      {{ with .Params.role }} — {{ . }}{{ end }}
+    </li>
+  {{ end }}
+  </ul>
+{{ end }}
+{{ end }}
