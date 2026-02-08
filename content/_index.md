@@ -1,9 +1,9 @@
 ---
-title: "Adrián Castro Viejo"
+title: "Home"
 ---
 
-## VFX Filmmaker | Senior Layout Artist
+# Adrián Castro Viejo
 
-Trabajando en producciones de alto nivel para cine y series.
+VFX Artist & Filmmaker
 
-[Ver Filmography](/projects/) -  [Contactar](/contact/)
+[Filmography](/projects/) • [Contact](/contact/)
